@@ -1,0 +1,13 @@
+Number: 1
+Mon Nov 20 20:47:27 +0000 2017
+https://t.co/3BWtljYeif
+Number: 2
+Mon Nov 20 20:45:43 +0000 2017
+https://t.co/RMgXKVf7mJ
+Number: 3
+Mon Nov 20 20:45:08 +0000 2017
+https://t.co/fmamrF3bpI
+Number: 4
+Mon Nov 20 20:44:00 +0000 2017
+https://t.co/2cwsqJLytc
+[object Object]Flicka Da Wristtonight{"Title":"Dirty Dancing","Year":"1987","Rated":"PG-13","Released":"21 Aug 1987","Runtime":"100 min","Genre":"Drama, Music, Romance","Director":"Emile Ardolino","Writer":"Eleanor Bergstein","Actors":"Jennifer Grey, Patrick Swayze, Jerry Orbach, Cynthia Rhodes","Plot":"Spending the summer at a Catskills resort with her family, Frances \"Baby\" Houseman falls in love with the camp's dance instructor, Johnny Castle.","Language":"English","Country":"USA","Awards":"Won 1 Oscar. Another 11 wins & 6 nominations.","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTc3MDY3ODQ2OV5BMl5BanBnXkFtZTgwOTQ2NTYxMTE@._V1_SX300.jpg","Ratings":[{"Source":"Internet Movie Database","Value":"6.9/10"},{"Source":"Rotten Tomatoes","Value":"72%"},{"Source":"Metacritic","Value":"65/100"}],"Metascore":"65","imdbRating":"6.9","imdbVotes":"157,538","imdbID":"tt0092890","Type":"movie","DVD":"19 Aug 1997","BoxOffice":"$1,899,606","Production":"Vestron Pictures","Website":"N/A","Response":"True"}{"Title":"Finding Nemo","Year":"2003","Rated":"G","Released":"30 May 2003","Runtime":"100 min","Genre":"Animation, Adventure, Comedy","Director":"Andrew Stanton, Lee Unkrich(co-director)","Writer":"Andrew Stanton (original story by), Andrew Stanton (screenplay by), Bob Peterson (screenplay by), David Reynolds (screenplay by)","Actors":"Albert Brooks, Ellen DeGeneres, Alexander Gould, Willem Dafoe","Plot":"After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.","Language":"English","Country":"USA","Awards":"Won 1 Oscar. Another 48 wins & 61 nominations.","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BZjMxYzBiNjUtZDliNC00MDAyLTg3N2QtOWNjNmNhZGQzNDg5XkEyXkFqcGdeQXVyNjE2MjQwNjc@._V1_SX300.jpg","Ratings":[{"Source":"Internet Movie Database","Value":"8.1/10"},{"Source":"Rotten Tomatoes","Value":"99%"},{"Source":"Metacritic","Value":"90/100"}],"Metascore":"90","imdbRating":"8.1","imdbVotes":"776,169","imdbID":"tt0266543","Type":"movie","DVD":"07 May 2013","BoxOffice":"$380,529,370","Production":"Walt Disney Pictures","Website":"http://disney.go.com/disneyvideos/animatedfilms/findingnemo/index2.html","Response":"True"}
