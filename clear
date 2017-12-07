@@ -1,0 +1,95 @@
+[1mdiff --git a/hwk-11/letter.js b/hwk-11/letter.js[m
+[1mindex d164474..2069172 100644[m
+[1m--- a/hwk-11/letter.js[m
+[1m+++ b/hwk-11/letter.js[m
+[36m@@ -1,18 +1,17 @@[m
+[31m-this homework was very hard for me. i received tutoring on what i found on the net... and i am not sure i would be able to do this solo just yet. [m
+[31m-i wish more time was spent on homework assignments to not feel like total failure with complicated javascript. maybe that is just me. [m
+ [m
+ [m
+[31m-// function Letter(let) {[m
+[31m-//   this.charac = let;[m
+[31m-//   this.appear = false;[m
+ [m
+[31m-//   this.letterRender = function() {[m
+[31m-//     if (this.appear === false) {[m
+[31m-//       return "__";[m
+[31m-//     } else {[m
+[31m-//       return this.charac;[m
+[31m-//     }[m
+[31m-//   }[m
+[31m-// };[m
+[32m+[m[32m function Letter(let) {[m
+[32m+[m[32m   this.charac = let;[m
+[32m+[m[32m   this.appear = false;[m
+ [m
+[31m-// module.exports = Letter;[m
+[32m+[m[32m   this.letterRender = function() {[m
+[32m+[m[32m     if (this.appear === false) {[m
+[32m+[m[32m       return "__";[m
+[32m+[m[32m     } else {[m
+[32m+[m[32m       return this.charac;[m
+[32m+[m[32m     }[m
+[32m+[m[32m   }[m
+[32m+[m[32m };[m
+[32m+[m
+[32m+[m[32m module.exports = Letter;[m
+[1mdiff --git a/hwk-11/main.js b/hwk-11/main.js[m
+[1mindex 5f8abe5..1b994d2 100644[m
+[1m--- a/hwk-11/main.js[m
+[1m+++ b/hwk-11/main.js[m
+[36m@@ -1,46 +1,43 @@[m
+[31m-this homework was very hard for me. i received tutoring on what i found on the net... and i am not sure i would be able to do this solo just yet. [m
+[31m-i wish more time was spent on homework assignments to not feel like total failure with complicated javascript. maybe that is just me. [m
+ [m
+[32m+[m[32mvar prompt = require("prompt");[m
+[32m+[m[32mprompt.start();[m
+[32m+[m[32mvar Word = require("./word.js");[m
+ [m
+[31m-// var prompt = require("prompt");[m
+[31m-// prompt.start();[m
+[31m-// var Word = require("./word.js");[m
+ [m
+[32m+[m[32mvar game = {[m
+[32m+[m[32m  wordBank: ["rachel", "joey", "chandler", "monica", "phoebe", "ugly naked guy", "triplets", "ross", "coffee shop"],[m
+[32m+[m[32m  guessesRemaining: 10,[m
+[32m+[m[32m  currentWrd: null,[m
+ [m
+[31m-// var game = {[m
+[31m-//   wordBank: ["rachel", "joey", "chandler", "monica", "phoebe", "ugly naked guy", "triplets", "ross", "coffee shop"],[m
+[31m-//   guessesRemaining: 10,[m
+[31m-//   currentWrd: null,[m
+[32m+[m[32m  startGame: function(wrd) {[m
+[32m+[m[32m    var newWord = new Word(this.wordBank[Math.floor(Math.random()*this.wordBank.length)]);[m
+[32m+[m[32m    this.currentWrd = newWord;[m
+[32m+[m[32m    this.currentWrd.getLets();[m
+[32m+[m[32m    this.keepPromptingUser();[m
+[32m+[m[32m  },[m
+[32m+[m[32m  keepPromptingUser: function() {[m
+ [m
+[31m-//   startGame: function(wrd) {[m
+[31m-//     var newWord = new Word(this.wordBank[Math.floor(Math.random()*this.wordBank.length)]);[m
+[31m-//     this.currentWrd = newWord;[m
+[31m-//     this.currentWrd.getLets();[m
+[31m-//     this.keepPromptingUser();[m
+[31m-//   },[m
+[31m-//   keepPromptingUser: function() {[m
+[31m-[m
+[31m-//     var self = this;[m
+[32m+[m[32m    var self = this;[m
+     [m
+ [m
+[31m-//     prompt.get(["guessLetter"], function(err, result) {[m
+[31m-//       console.log("The Letter or space you guessed is " + result.guessLetter);[m
+[31m-//       var findHowManyOfUserGuesses = self.currentWrd.checkIfLetterFound(result.guessLetter);[m
+[31m-[m
+[31m-//       if (findHowManyOfUserGuesses === 0) {[m
+[31m-//         console.log("You guessed wrong!");[m
+[31m-//         self.guessesRemaining -= 1;[m
+[31m-//       } else {[m
+[31m-//         console.log("You guessed right!");[m
+[31m-//         if (self.currentWrd.didWeFindTheWord() === true) {[m
+[31m-//           console.log("You Won!!!");[m
+[31m-//           return 1;[m
+[31m-//         } else {[m
+[31m-//           console.log("guesses remaining: " + self.
